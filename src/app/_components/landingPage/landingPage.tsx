@@ -2,7 +2,6 @@ import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
 import {
   Heart,
   Sparkles,
@@ -11,9 +10,9 @@ import {
   Search,
   Calendar,
   Star,
-  ArrowRight,
   CheckCircle,
 } from "lucide-react";
+import { WaitlistForm } from "../waitlist-form";
 
 export default function LandingPage() {
   return (
@@ -52,22 +51,7 @@ export default function LandingPage() {
           </p>
 
           {/* Waitlist Form */}
-          <div className="mx-auto mb-8 max-w-md">
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                className="h-12 flex-1 border-2 border-rose-200 text-lg focus:border-rose-400"
-              />
-              <Button className="h-12 bg-gradient-to-r from-rose-500 to-purple-600 px-8 font-semibold text-white hover:from-rose-600 hover:to-purple-700">
-                Join Waitlist
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-            <p className="mt-3 text-sm text-gray-500">
-              Join 12,847+ couples already on the waitlist
-            </p>
-          </div>
+          <WaitlistForm source="hero" variant="hero" className="mb-8" />
 
           {/* Social Proof */}
           <div className="flex items-center justify-center space-x-6 text-sm text-gray-500">
@@ -272,19 +256,7 @@ export default function LandingPage() {
             perfect day. Get early access and exclusive perks.
           </p>
 
-          <div className="mx-auto mb-6 max-w-md">
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Input
-                type="email"
-                placeholder="Enter your email address"
-                className="h-12 flex-1 border-white/20 bg-white/10 text-lg text-white placeholder:text-white/70 focus:bg-white/20"
-              />
-              <Button className="h-12 bg-white px-8 font-semibold text-rose-600 hover:bg-gray-100">
-                Get Early Access
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
-          </div>
+          <WaitlistForm source="cta" variant="cta" className="mb-6" />
 
           <div className="flex items-center justify-center space-x-8 text-sm opacity-80">
             <div className="flex items-center">
