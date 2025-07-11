@@ -1,11 +1,6 @@
-import Link from "next/link";
+import LandingPage from "./_components/landingPage/landingPage";
 
-import { auth } from "~/server/auth";
-import { LandingPage } from "./_components/landingPage/landingPage";
-
-export default async function Home() {
-  const session = await auth();
-
+export default function Home() {
   return (
     <main>
       <LandingPage />
