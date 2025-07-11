@@ -1,6 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+  /* Font Families */
+  --font-sans:
+    "Roboto", var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-title:
+    "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-body:
+    "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Colors */
+  --color-neutral-50: #fae7f4;
+  --color-neutral-100: #f3e0ed;
+  --color-neutral-200: #ebd9e5;
+  --color-neutral-300: #e4d2de;
+  --color-neutral-400: #dccbd7;
+  --color-neutral-500: #d5c4cf;
+  --color-neutral-600: #645c62;
+  --color-neutral-700: #4b4549;
+  --color-neutral-800: #322e31;
+  --color-neutral-900: #191718;
+  --color-neutral: #fae7f4;
+
+  --color-primary-50: #fdf0f2;
+  --color-primary-100: #fce9eb;
+  --color-primary-200: #f8d2d6;
+  --color-primary-300: #e86d7b;
+  --color-primary-400: #d1626f;
+  --color-primary-500: #ba5762;
+  --color-primary-600: #ae525c;
+  --color-primary-700: #8b414a;
+  --color-primary-800: #683137;
+  --color-primary-900: #51262b;
+  --color-primary: #e86d7b;
+
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-xs--line-height: 19.2px;
+  --font-size-sm: 14px;
+  --font-size-sm--line-height: 21px;
+  --font-size-base: 16px;
+  --font-size-base--line-height: 25.6px;
+  --font-size-lg: 18px;
+  --font-size-lg--line-height: 27px;
+  --font-size-xl: 20px;
+  --font-size-xl--line-height: 28px;
+  --font-size-2xl: 24px;
+  --font-size-2xl--line-height: 31.2px;
+  --font-size-3xl: 30px;
+  --font-size-3xl--line-height: 36px;
+  --font-size-4xl: 36px;
+  --font-size-4xl--line-height: 41.4px;
+  --font-size-5xl: 48px;
+  --font-size-5xl--line-height: 52.8px;
+  --font-size-6xl: 60px;
+  --font-size-6xl--line-height: 66px;
+  --font-size-7xl: 72px;
+  --font-size-7xl--line-height: 75.6px;
+  --font-size-8xl: 96px;
+  --font-size-8xl--line-height: 100.8px;
+  --font-size-9xl: 128px;
+  --font-size-9xl--line-height: 134.4px;
+
+  /* Border Radius */
+  --radius-none: 0px;
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --radius-2xl: 48px;
+  --radius-3xl: 72px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --spacing-0: 0px;
+  --spacing-1: 5px;
+  --spacing-2: 10px;
+  --spacing-3: 15px;
+  --spacing-4: 20px;
+  --spacing-5: 25px;
+  --spacing-6: 30px;
+  --spacing-7: 35px;
+  --spacing-8: 40px;
+  --spacing-9: 45px;
+  --spacing-10: 50px;
+  --spacing-11: 55px;
+  --spacing-12: 60px;
+  --spacing-14: 70px;
+  --spacing-16: 80px;
+  --spacing-20: 100px;
+  --spacing-24: 120px;
+  --spacing-28: 140px;
+  --spacing-32: 160px;
+  --spacing-36: 180px;
+  --spacing-40: 200px;
+  --spacing-44: 220px;
+  --spacing-48: 240px;
+  --spacing-52: 260px;
+  --spacing-56: 280px;
+  --spacing-60: 300px;
+  --spacing-64: 320px;
+  --spacing-72: 360px;
+  --spacing-80: 400px;
+  --spacing-96: 480px;
+  --spacing-px: 1px;
+  --spacing-0_5: 2.5px;
+  --spacing-1_5: 7.5px;
+  --spacing-2_5: 12.5px;
+  --spacing-3_5: 17.5px;
 }
+
+/* .material-symbols-outlined {
+  font-family: "Material Symbols Outlined" !important;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+} */
